@@ -5,14 +5,18 @@
   "main": "sicil.js",
   "repository": "https://github.com/drtconway/sicil",
   "author": "Tom Conway",
-  "license": "MIT",
-  "devDependencies": {
-    "jest": "^27.0.6"
-  },
+  "email": "drtomc@gmail.com",
+  "license": "Apache-2.0",
   "scripts": {
+    "build": "webpack",
     "test": "jest --runInBand"
   },
   "dependencies": {
     "line-reader": "^0.4.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
   }
 }
