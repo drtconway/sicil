@@ -1,0 +1,18 @@
+{
+  "name": "sicil",
+  "version": "1.0.0",
+  "description": "An interval stabbing library",
+  "main": "sicil.js",
+  "repository": "https://github.com/drtconway/sicil",
+  "author": "Tom Conway",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "line-reader": "^0.4.0"
+  }
+}
