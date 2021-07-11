@@ -11,6 +11,7 @@
     "build": "webpack",
     "test": "jest --runInBand"
   },
+  "files": ["dist/sicil.js"],
   "dependencies": {
     "line-reader": "^0.4.0"
   },
