@@ -27,7 +27,25 @@ const unique_impl = function(a) {
     return a.subarray(0, j);
 }
 
+
+/**
+ * Class representing a set of closed intervals supporting efficient queries.
+ */
 class Sicil {
+    /**
+     * Create an indexed set of intervals.
+     *
+     * Intervals are *closed* - that is they are inclusive of both endpoints.
+     *
+     * Intervals may overlap.
+     *
+     * There must not be any duplicates.
+     *
+     * The argument array is kept by the object, so may be
+     * altered or discarded after the constructor returns.
+     *
+     * @param {Array} intervals - an array of intervals.
+     */
     constructor(intervals) {
         let ps = new Uint32Array(2*intervals.length);
         for (let i = 0; i < intervals.length; i++) {
@@ -148,6 +166,12 @@ class Sicil {
         }
     }
 
+    /**
+     * Find the set of intervals that overlap a given position.
+     *
+     * @param {Integer} p - the position to *stab*.
+     * @return {Array} The list, in sorted order, of intervals that overlap the given position.
+     */
     find(p) {
         let q = this.sparse_to_dense(p);
         let xs = this.stab(q);
@@ -202,6 +226,12 @@ class Sicil {
         return res;
     }
 
+    /**
+     * Find the set of intervals that overlap a given range.
+     *
+     * @param {Pair} p - the closed interval to stab.
+     * @return {Array} The list, in sorted order, of intervals that overlap the given range.
+     */
     findRange(p) {
         let q0 = this.sparse_to_dense(p[0]);
         let q1 = this.sparse_to_dense(p[1]);

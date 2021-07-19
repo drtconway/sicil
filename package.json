@@ -1,8 +1,8 @@
 {
   "name": "sicil",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An interval stabbing library",
-  "main": "sicil.js",
+  "main": "./dist/sicil.js",
   "repository": "https://github.com/drtconway/sicil",
   "author": "Tom Conway",
   "email": "drtomc@gmail.com",
@@ -11,13 +11,15 @@
     "build": "webpack",
     "test": "jest --runInBand"
   },
-  "files": ["dist/sicil.js"],
+  "files": [
+    "dist/sicil.js"
+  ],
   "dependencies": {
-    "line-reader": "^0.4.0"
   },
   "devDependencies": {
     "jest": "^27.0.6",
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "jsdoc": "^3.6.7"
   }
 }
