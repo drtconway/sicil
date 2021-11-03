@@ -1,4 +1,4 @@
-const Bitvec = require('../bitvec');
+const Bitvec = require('../src/bitvec');
 
 class Rnd {
     constructor(x) {

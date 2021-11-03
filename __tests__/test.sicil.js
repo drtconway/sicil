@@ -1,4 +1,4 @@
-const Sicil = require('../sicil');
+const Sicil = require('../src/sicil');
 
 const fcsk = [
     [5,40], [5,25683], [5,25684], [8579,8600],

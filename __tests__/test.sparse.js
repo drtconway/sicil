@@ -1,4 +1,4 @@
-const Sparse = require('../sparse');
+const Sparse = require('../src/sparse');
 
 const X = [
     5, 40, 8579, 8600, 8601, 8603, 8682, 9033, 9184, 10440, 10536,

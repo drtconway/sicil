@@ -1,4 +1,4 @@
-const Dense = require('../dense');
+const Dense = require('../src/dense');
 
 class Rnd {
     constructor(x) {

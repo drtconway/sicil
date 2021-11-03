@@ -1,4 +1,4 @@
-const List = require('../list');
+const List = require('../src/list');
 
 test('size of empty list', () => {
     let l = new List();
